@@ -25,7 +25,7 @@ class questionController{
                 let saveQuestion = await questionRepository.save(userData);
                 if(saveQuestion){
                     console.log("Your Question is saved Successfully into the database");
-                    return res.status(201).json({
+                    return res.status(200).json({
                         Success:true,
                         Message:'Your Question is saved Successfully into the database'
                     })

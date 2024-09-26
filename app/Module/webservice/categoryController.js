@@ -24,7 +24,7 @@ class categoryController{
                 let saveCategory = await categoryRepository.save(categoryData);
                 if(saveCategory){
                     console.log("The category details are Saved Successfully");
-                    return res.status(201).json({
+                    return res.status(200).json({
                         Success:true,
                         Message:"The category details are Saved Successfully"
                     })
